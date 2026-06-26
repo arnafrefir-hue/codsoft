@@ -1,0 +1,229 @@
+/* Custom Global Resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: #fcfcfc;
+}
+
+/* Navigation Bar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .logo {
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: #1e3c72;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #1e3c72;
+}
+
+.nav-btn {
+    text-decoration: none;
+    background-color: #1e3c72;
+    color: #fff;
+    padding: 10px 22px;
+    border-radius: 4px;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+
+.nav-btn:hover {
+    background-color: #2a5298;
+}
+
+/* Hero Section (With Background Color Blending) */
+.hero {
+    background: linear-gradient(rgba(30, 60, 114, 0.85), rgba(42, 82, 152, 0.85)), 
+                url('https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1200') no-repeat center center/cover;
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    padding: 0 20px;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+    max-width: 800px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.9;
+}
+
+.cta-btn {
+    text-decoration: none;
+    background-color: #00b4d8;
+    color: #fff;
+    padding: 14px 30px;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: background 0.3s, transform 0.2s;
+    display: inline-block;
+}
+
+.cta-btn:hover {
+    background-color: #0096c7;
+    transform: translateY(-2px);
+}
+
+/* Features Grid Section (3-Column Layout) */
+.features-section {
+    padding: 80px 8%;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.features-section h2 {
+    font-size: 2.2rem;
+    color: #1e3c72;
+    margin-bottom: 10px;
+}
+
+.section-subtitle {
+    color: #777;
+    margin-bottom: 50px;
+    font-size: 1.1rem;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+}
+
+.feature-card {
+    background-color: #f8f9fa;
+    padding: 40px 30px;
+    border-radius: 8px;
+    border: 1px solid #e9ecef;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: left;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+.feature-card .icon {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.feature-card h3 {
+    font-size: 1.4rem;
+    color: #1e3c72;
+    margin-bottom: 15px;
+}
+
+.feature-card p {
+    color: #666;
+    font-size: 0.95rem;
+}
+
+/* Call To Action Section */
+.cta-section {
+    background-color: #1e3c72;
+    color: #fff;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.cta-section h2 {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+}
+
+.cta-section p {
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
+
+.cta-form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    max-width: 500px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.cta-form input {
+    padding: 15px 20px;
+    border-radius: 4px;
+    border: none;
+    flex: 1;
+    min-width: 250px;
+    font-size: 1rem;
+}
+
+.cta-form button {
+    padding: 15px 30px;
+    border: none;
+    background-color: #00b4d8;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.cta-form button:hover {
+    background-color: #0096c7;
+}
+
+/* Footer Grid Styling */
+.landing-footer {
+    background-color: #111;
+    color: #888;
+    text-align: center;
+    padding: 30px 20px;
+    font-size: 0.9rem;
+}

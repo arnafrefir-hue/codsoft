@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Calculator</title>
+    <link rel="stylesheet" href="calc-style.css">
+</head>
+<body>
+
+    <div class="calculator-container">
+        <div class="calc-screen">
+            <div id="display-history" class="history"></div>
+            <div id="display-current" class="current">0</div>
+        </div>
+
+        <div class="calc-buttons">
+            <button class="btn clear" data-action="clear">C</button>
+            <button class="btn delete" data-action="delete">DEL</button>
+            <button class="btn operator" data-action="divide">÷</button>
+            <button class="btn operator" data-action="multiply">×</button>
+
+            <button class="btn number">7</button>
+            <button class="btn number">8</button>
+            <button class="btn number">9</button>
+            <button class="btn operator" data-action="subtract">-</button>
+
+            <button class="btn number">4</button>
+            <button class="btn number">5</button>
+            <button class="btn number">6</button>
+            <button class="btn operator" data-action="add">+</button>
+
+            <button class="btn number">1</button>
+            <button class="btn number">2</button>
+            <button class="btn number">3</button>
+            <button class="btn equal-btn" data-action="calculate">=</button>
+
+            <button class="btn number zero-btn">0</button>
+            <button class="btn number" data-action="decimal">.</button>
+        </div>
+    </div>
+
+    <script src="calc-script.js"></script>
+</body>
+</html>
